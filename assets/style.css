@@ -343,3 +343,46 @@ li{ margin: 6px 0; color: var(--muted); }
   .span-7,.span-6,.span-5,.span-4{ grid-column: span 12; }
   .hero-ribbon{ height: 175px; }
 }
+
+/* === Subtle color polish (safe overrides) === */
+
+/* Header gets a cool tint + slightly stronger separation */
+.header{
+  background: rgba(248,250,255,0.82);              /* was plain white glass */
+  border-bottom: 1px solid rgba(15,23,42,0.10);
+  box-shadow: 0 6px 22px rgba(15,23,42,0.06);
+}
+
+/* Nav hover a bit more visible */
+.nav a:hover{
+  background: rgba(122,77,255,0.06);
+  border-color: rgba(122,77,255,0.14);
+}
+
+/* Hero card: soft gradient wash */
+.hero-block{
+  background:
+    radial-gradient(900px 420px at 20% 0%, rgba(122,77,255,0.08), transparent 55%),
+    radial-gradient(900px 420px at 80% 30%, rgba(0,183,199,0.07), transparent 55%),
+    rgba(255,255,255,0.78);
+  border: 1px solid rgba(15,23,42,0.10);
+  box-shadow: 0 18px 60px rgba(15,23,42,0.12);
+}
+
+/* Pills: slightly more “chip” look */
+.pill{
+  background: rgba(15,23,42,0.035);
+  border-color: rgba(15,23,42,0.10);
+}
+
+/* Secondary buttons: gentle gray */
+.btn{
+  background: rgba(255,255,255,0.86);
+  border-color: rgba(15,23,42,0.12);
+}
+.btn:hover{
+  background: rgba(255,255,255,0.94);
+}
+
+
+
