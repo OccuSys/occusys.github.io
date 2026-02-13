@@ -4,18 +4,15 @@ title: Home
 permalink: /
 ---
 
-<div class="hero">
-<div class="hero-inner">
-
 <a id="home"></a>
 
+<div class="hero"></div>
+
 # Occupant-Centric Energy Systems (OccuSys)
-## Modeling and Control Beyond Static Boundaries  
+
+## Modeling and Control Beyond Static Boundaries
+
 ### ACM BuildSys 2026 · Banff, Canada
-
-</div>
-</div>
-
 
 <div class="callout">
 The energy transition presents unprecedented opportunities to rethink how we model, predict, and respond to occupant behavior. From personalized thermal comfort control and human-in-the-loop systems to data-driven behavior prediction and adaptive building automation, emerging technologies enable buildings to become truly occupant-centric.
@@ -23,13 +20,6 @@ The energy transition presents unprecedented opportunities to rethink how we mod
 
 ---
 
-<div class="section-card">
-<strong>Submit to OccuSys</strong><br>
-Submission deadline: <strong>April 10, 2026 (AoE)</strong><br>
-Notification: <strong>April 20, 2026</strong> · Camera-ready: <strong>May 5, 2026</strong>
-</div>
-
----
 <a id="about"></a>
 
 ## About the Workshop
@@ -59,16 +49,6 @@ The workshop aims to:
 - Model predictive control with behavior forecasting  
 - Privacy-preserving controls  
 
-### Beyond static comfort boundaries
-- Adaptive thermal comfort models in practice  
-- Context-dependent comfort  
-- Thermal comfort equity and individual differences  
-
-### Integration with energy systems
-- Demand response enabled by occupant behavior prediction  
-- Thermal energy storage and occupant flexibility  
-- Building-to-grid services considering occupant comfort  
-
 ---
 
 <a id="dates"></a>
@@ -86,8 +66,7 @@ The workshop aims to:
 
 ## Submission
 
-Submission guidelines will follow ACM BuildSys workshop policies.  
-Submission platform details will be announced soon.
+Submission guidelines will follow ACM BuildSys workshop policies.
 
 ---
 
@@ -96,7 +75,7 @@ Submission platform details will be announced soon.
 ## Organizing Committee
 
 - Ava Mohammadi (TU/e)  
-- (Add additional organizers here)
+- (Add others here)
 
 ---
 
