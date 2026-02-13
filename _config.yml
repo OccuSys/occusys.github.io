@@ -10,19 +10,20 @@ permalink: pretty
 
 nav:
   - title: Home
-    url: "/buildsys2026/#home"
+    url: "/occusys2026/#home"
   - title: About
-    url: "/buildsys2026/#about"
+    url: "/occusys2026/#about"
   - title: Topics
-    url: "/buildsys2026/#topics"
+    url: "/occusys2026/#topics"
   - title: Dates
-    url: "/buildsys2026/#dates"
+    url: "/occusys2026/#dates"
   - title: Submission
-    url: "/buildsys2026/#submission"
+    url: "/occusys2026/#submission"
   - title: Committee
-    url: "/buildsys2026/#committee"
+    url: "/occusys2026/#committee"
   - title: Contact
-    url: "/buildsys2026/#contact"
+    url: "/occusys2026/#contact"
+
 
 
 
