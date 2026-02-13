@@ -1,117 +1,193 @@
-:root {
-  --max-width: 980px;
-  --header-height: 100px;
+:root{
+  --max-width: 1040px;
+
+  /* Brand */
+  --bg: #0b1020;
+  --panel: rgba(255,255,255,0.06);
+  --panel-2: rgba(255,255,255,0.08);
+  --text: rgba(255,255,255,0.92);
+  --muted: rgba(255,255,255,0.72);
+  --border: rgba(255,255,255,0.14);
+
+  /* Accent (tech blue) */
+  --accent: #6aa6ff;
+  --accent-2: #7cf0ff;
+
+  /* Light surface */
+  --page: #ffffff;
+  --ink: #111;
+  --ink-muted: #555;
+
+  --radius: 16px;
+  --shadow: 0 10px 30px rgba(10, 20, 40, 0.12);
+  --header-height: 104px;
 }
 
 /* Reset */
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-  line-height: 1.6;
-  color: #111;
-}
-
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
+*{ box-sizing:border-box; }
+html{ scroll-behavior:smooth; }
+body{
+  margin:0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  line-height:1.65;
+  background: var(--page);
+  color: var(--ink);
 }
 
 /* Layout container */
-.container {
+.container{
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 22px;
 }
 
-/* Header */
-.header {
+/* Sticky header with subtle blur */
+.header{
   position: sticky;
   top: 0;
-  background: white;
-  border-bottom: 1px solid #e6e6e6;
-  padding: 18px 0;
   z-index: 1000;
+  background: rgba(255,255,255,0.82);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  padding: 14px 0;
 }
 
-.brand-title {
-  font-weight: 700;
-  font-size: 18px;
+/* Brand line */
+.brand-title{
+  font-weight: 800;
+  font-size: 16px;
+  letter-spacing: 0.2px;
 }
-
-.brand-subtitle {
+.brand-subtitle{
   font-size: 13px;
-  color: #555;
+  color: var(--ink-muted);
   margin-top: 4px;
 }
 
 /* Navigation */
-.nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  margin-top: 14px;
+.nav{
+  display:flex;
+  flex-wrap:wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+.nav a{
+  text-decoration:none;
+  color: rgba(0,0,0,0.82);
+  font-weight: 600;
+  font-size: 14px;
+  padding: 8px 10px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  transition: all 0.18s ease;
+}
+.nav a:hover{
+  border-color: rgba(0,0,0,0.10);
+  background: rgba(0,0,0,0.03);
 }
 
-.nav a {
-  text-decoration: none;
-  color: #111;
-  font-weight: 500;
-  transition: opacity 0.2s ease;
+/* Main */
+.main{
+  padding: 34px 22px 56px;
 }
 
-.nav a:hover {
-  opacity: 0.6;
+/* Anchor offset for sticky header */
+[id]{ scroll-margin-top: calc(var(--header-height) + 18px); }
+
+/* --- HERO / top section styling --- */
+/* Your first h1 becomes a strong “research” headline */
+h1{
+  font-size: clamp(34px, 4.4vw, 52px);
+  line-height: 1.08;
+  margin: 0 0 14px;
+  letter-spacing: -0.8px;
+}
+h2{
+  font-size: clamp(22px, 2.4vw, 30px);
+  margin: 46px 0 14px;
+  letter-spacing: -0.3px;
+}
+h3{
+  font-size: 18px;
+  margin: 22px 0 8px;
 }
 
-/* Main content */
-.main {
-  padding: 40px 20px;
+/* Make the first “subtitle” blocks look intentional */
+.content > h2:first-of-type{
+  margin-top: 8px;
 }
 
-/* Callout box */
-.callout {
-  background: #f6f6f6;
-  padding: 18px 20px;
-  border-radius: 14px;
-  margin: 25px 0;
-  border: 1px solid #eaeaea;
+/* Callout: turn it into a branded “research card” */
+.callout{
+  position: relative;
+  border-radius: var(--radius);
+  padding: 18px 18px;
+  margin: 22px 0 22px;
+  border: 1px solid rgba(20,40,80,0.10);
+  box-shadow: var(--shadow);
+  background:
+    linear-gradient(135deg, rgba(106,166,255,0.10), rgba(124,240,255,0.08)),
+    #ffffff;
+}
+.callout:before{
+  content:"";
+  position:absolute;
+  inset: -1px;
+  border-radius: var(--radius);
+  padding: 1px;
+  background: linear-gradient(135deg, rgba(106,166,255,0.55), rgba(124,240,255,0.35));
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events:none;
 }
 
-/* Section spacing */
-section {
-  margin-bottom: 60px;
+/* Typography polish */
+p{ margin: 0 0 14px; }
+ul{ margin: 10px 0 16px 22px; }
+li{ margin: 6px 0; }
+hr{
+  border: 0;
+  height: 1px;
+  background: rgba(0,0,0,0.08);
+  margin: 26px 0;
 }
 
-/* Fix anchor offset due to sticky header */
-[id] {
-  scroll-margin-top: 120px;
+/* Nice “section blocks” if you add <div class="section-card"> ... */
+.section-card{
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: var(--radius);
+  padding: 18px 18px;
+  background: #fff;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.06);
+  margin: 16px 0 22px;
 }
 
-/* Headings */
-h1 {
-  font-size: 42px;
-  margin-bottom: 10px;
-}
-
-h2 {
-  margin-top: 50px;
-  font-size: 28px;
-}
-
-h3 {
-  margin-top: 30px;
-  font-size: 20px;
-}
+/* Links */
+a{ color: #1a58d6; }
+a:hover{ opacity: 0.85; }
 
 /* Footer */
-.footer {
-  border-top: 1px solid #e6e6e6;
-  padding: 25px 0;
-  margin-top: 60px;
+.footer{
+  border-top: 1px solid rgba(0,0,0,0.08);
+  padding: 22px 0;
+  margin-top: 50px;
+  color: rgba(0,0,0,0.60);
   font-size: 14px;
-  color: #666;
+}
+
+/* --- Optional: subtle top “research ribbon” background --- */
+.page-ribbon{
+  background: radial-gradient(1200px 420px at 20% -10%, rgba(106,166,255,0.22), transparent 60%),
+              radial-gradient(900px 320px at 90% 0%, rgba(124,240,255,0.16), transparent 55%);
+}
+
+/* Responsive */
+@media (max-width: 720px){
+  .nav{ gap: 8px; }
+  .nav a{ padding: 7px 9px; font-size: 13px; }
+  .main{ padding: 26px 18px 46px; }
 }
