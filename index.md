@@ -102,9 +102,7 @@ We invite original research, position papers, and work-in-progress submissions o
 
 ## Submission
 
-Submissions must be unpublished and not under review for any other venue. Papers must be **at most 6 pages (single-spaced, US Letter 8.5” × 11”)**, including figures, tables, references, and appendices.
-
-The format must follow the official 
+Submissions must be unpublished and not under review for any other venue. Papers must be **at most 6 pages (single-spaced, US Letter 8.5” × 11”)**, including figures, tables, references, and appendices. The format must follow the official 
 <a href="https://www.acm.org/publications/proceedings-template" target="_blank" rel="noopener">
 ACM proceedings template (sigconf format)
 </a> 
