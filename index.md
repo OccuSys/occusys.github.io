@@ -24,13 +24,10 @@ permalink: /
     <span class="pill"><strong>Submission</strong> April 10, 2026 (AoE)</span>
     <span class="pill"><strong>Notification</strong> April 20, 2026</span>
     <span class="pill"><strong>Camera-ready</strong> May 5, 2026</span>
+    
+    <a class="btn primary small" href="#submission">Submit</a>
   </div>
 
-  <div class="cta-row">
-    <a class="btn primary" href="#submission">Submit</a>
-    <a class="btn" href="#topics">Topics</a>
-    <a class="btn" href="#dates">Important Dates</a>
-  </div>
 </div>
 
 <div class="hero-ribbon">
