@@ -45,68 +45,48 @@ body{
 /* =========================
    HEADER (works with your classes OR generic header tags)
    ========================= */
+/* ===== Header: soft dark bar on light page ===== */
 .header,
 header,
 .site-header{
   position: sticky;
   top: 0;
   z-index: 1000;
-
   padding: 18px 0;
 
-  /* Option A cool header */
-  background: rgba(248,250,255,0.82);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: linear-gradient(180deg, rgba(17,24,39,0.92), rgba(17,24,39,0.86));
+  border-bottom: 1px solid rgba(255,255,255,0.10);
 
-  border-bottom: 1px solid rgba(15,23,42,0.10);
-  box-shadow: 0 6px 22px rgba(15,23,42,0.06);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  box-shadow: 0 10px 30px rgba(15,23,42,0.18);
 }
 
+/* header text */
 .brand-title,
 .site-title{
-  font-weight: 800;
-  font-size: 16px;
-  letter-spacing: 0.2px;
-  color: rgba(15,23,42,0.92);
+  color: rgba(255,255,255,0.92);
 }
 
 .brand-subtitle,
 .site-subtitle{
-  font-size: 13px;
-  color: var(--muted);
-  margin-top: 4px;
+  color: rgba(255,255,255,0.62);
 }
 
-/* Navigation */
-.nav,
-nav,
-.site-nav{
-  display:flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 12px;
-}
-
+/* nav links */
 .nav a,
 nav a,
 .site-nav a{
-  text-decoration:none;
-  color: rgba(15,23,42,0.92);
-  font-weight: 650;
-  padding: 8px 12px;
-  border-radius: 999px;
-  border: 1px solid transparent;
-  transition: transform .15s ease, background .2s ease, border-color .2s ease, color .2s ease;
+  color: rgba(255,255,255,0.86);
 }
 
 .nav a:hover,
 nav a:hover,
 .site-nav a:hover{
-  background: rgba(122,77,255,0.06);
-  border-color: rgba(122,77,255,0.14);
-  transform: translateY(-1px);
-  color: rgba(15,23,42,0.98);
+  background: rgba(255,255,255,0.10);
+  border-color: rgba(255,255,255,0.16);
+  color: #fff;
 }
 
 /* Main */
