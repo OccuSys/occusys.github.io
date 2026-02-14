@@ -80,18 +80,6 @@ We invite original research, position papers, and work-in-progress submissions o
   
 
 ---
-
-<a id="dates"></a>
-
-## Important Dates (AoE)
-
-- **Submission:** April 10, 2026  
-- **Reviewer Deadline:** April 17, 2026  
-- **Notification:** April 20, 2026  
-- **Camera-ready:** May 5, 2026  
-
----
-
 <a id="submission"></a>
 
 ## Submission
@@ -113,6 +101,17 @@ Registration is handled through the official
 <a href="https://buildsys.acm.org/2026/" target="_blank" rel="noopener">
 ACM BuildSys 2026 website
 </a>.
+
+---
+
+<a id="dates"></a>
+
+## Important Dates (AoE)
+
+- **Submission:** April 10, 2026  
+- **Reviewer Deadline:** April 17, 2026  
+- **Notification:** April 20, 2026  
+- **Camera-ready:** May 5, 2026  
 
 ---
 
