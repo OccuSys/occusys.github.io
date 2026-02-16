@@ -139,7 +139,7 @@ body{
   box-shadow: 0 18px 60px rgba(15,23,42,0.14);
 
   /* room for ribbon background */
-  padding: 26px 26px 120px;
+  padding: 26px 26px 140px;
 }
 
 /* content always above ribbon */
@@ -256,12 +256,12 @@ h1{
 
 .hero-ribbon{
   position: absolute;
-  left: 18px;
-  right: 18px;
-  bottom: 18px;
-  height: 120px;
+  left: 16px;
+  right: 16px;
+  bottom: 16px;
+  height: 88px;
 
-  border-radius: 18px;
+  border-radius: 16px;
   overflow: hidden;
 
   border: 1px solid rgba(15,23,42,0.08);
@@ -286,7 +286,7 @@ h1{
 .hero-ribbon::before{
   content:"";
   position:absolute;
-  inset: 6px;  /* prevents border-radius clipping */
+  inset: 4px;  /* prevents border-radius clipping */
 
   background-image: url("/assets/ribbon.svg");
   background-repeat: no-repeat;
@@ -295,9 +295,6 @@ h1{
 
   opacity: 0.95;
 }
-
-
-
 
 
 /* Base content styling */
