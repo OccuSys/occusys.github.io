@@ -3,10 +3,10 @@
 
   /* desktop sticky header height (approx) */
   --header-height: 120px;
-  --anchor-gap: 18px;
+  --anchor-gap: 14px;
 
   /* anchor offset MUST follow header height */
-  --anchor-offset: calc(var(--header-height) + 18px);
+  --anchor-offset: calc(var(--header-height) + 14px);
 
   /* LIGHT THEME TOKENS */
   --bg0: #ffffff;
@@ -475,7 +475,7 @@ li{
   /* --- Anchor offset: ONLY sticky header height (not dropdown) --- */
   :root{
     --header-height: 92px; /* stable height now */
-    --anchor-offset: calc(var(--header-height) + 12px);
+    --anchor-offset: calc(var(--header-height) + 18px);
   }
 
   /* --- your spacing tweaks (keep) --- */
