@@ -28,8 +28,8 @@ permalink: /
 
   <div class="hero-ribbon">
     <div class="ribbon-back"></div>
+    <div class="ribbon-front"></div>
   </div>
-
 </div>
 
 ---
