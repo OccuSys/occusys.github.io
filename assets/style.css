@@ -289,12 +289,12 @@ h1{
 
 /* ✅ IMPORTANT: correct URL for your GitHub Pages baseurl */
 .hero-ribbon .ribbon-front{
-  background-image: url("/occusys.github.io/assets/ribbon.svg");
+  background-image: url("/assets/ribbon.svg");
   opacity: 0.85;
 }
 
 .hero-ribbon .ribbon-back{
-  background-image: url("/occusys.github.io/assets/ribbon.svg");
+  background-image: url("/assets/ribbon.svg");
   background-position: 240px 50%;  /* slight offset so it feels richer */
   opacity: 0.35;
 }
