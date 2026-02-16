@@ -7,16 +7,6 @@
     <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
   </head>
 
-  <script>
-    const toggle = document.querySelector(".nav-toggle");
-    const nav = document.querySelector(".nav");
-  
-    toggle.addEventListener("click", () => {
-      nav.classList.toggle("active");
-    });
-  </script>
-
-
   <body>
 
     <!-- ================= HEADER ================= -->
@@ -30,14 +20,14 @@
           </div>
         </div>
 
-    <!-- Hamburger button -->
-        <button class="nav-toggle" aria-label="Menu">
+        <!-- Hamburger button (shown on mobile via CSS) -->
+        <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-nav">
           <span></span>
           <span></span>
           <span></span>
         </button>
 
-        <nav class="nav">
+        <nav id="site-nav" class="nav">
           <a href="#home">Home</a>
           <a href="#about">About</a>
           <a href="#submission">Submission</a>
@@ -60,6 +50,29 @@
         © {{ site.time | date: "%Y" }} OccuSys Workshop
       </div>
     </footer>
+
+    <!-- ✅ Script MUST be after the HTML (or use DOMContentLoaded) -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const toggle = document.querySelector(".nav-toggle");
+        const nav = document.querySelector(".nav");
+
+        if (!toggle || !nav) return;
+
+        toggle.addEventListener("click", function () {
+          const isOpen = nav.classList.toggle("active");
+          toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+        });
+
+        // Optional: close menu after clicking a link
+        nav.querySelectorAll("a").forEach(a => {
+          a.addEventListener("click", () => {
+            nav.classList.remove("active");
+            toggle.setAttribute("aria-expanded", "false");
+          });
+        });
+      });
+    </script>
 
   </body>
 </html>
