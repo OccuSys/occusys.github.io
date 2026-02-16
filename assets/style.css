@@ -71,6 +71,7 @@ body{
   display:flex;
   align-items:center;
   justify-content:space-between;
+  position:relative;
   gap: 18px;
 }
 
@@ -334,26 +335,6 @@ li{ margin: 6px 0; color: var(--text); }
   font-size: 14px;
 }
 
-/* Mobile */
-@media (max-width: 920px){
-  .header-inner{
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .nav{ width: 100%; }
-
-  /* ✅ IMPORTANT: update BOTH header height AND anchor offset */
-  :root{
-    --header-height: 280px; /* increase if your nav wraps to 2 lines */
-    --anchor-offset: calc(var(--header-height) + 16px);
-  }
-
-  .container{ padding: 0 16px; } /* nicer margins on phone */
-
-  .hero-block{ padding: 22px 18px 175px; }
-  .hero-ribbon{ height: 125px; left: 14px; right: 14px; bottom: 14px; }
-}
-
 /* ---------- Pro polish: typography + layout rhythm ---------- */
 
 /* Slightly larger, more readable body */
@@ -427,34 +408,76 @@ li{
   transition:0.3s ease;
 }
 
-/* Mobile */
-@media (max-width: 768px){
+/* Mobile / small screens */
+@media (max-width: 920px){
 
-  .nav-toggle{
-    display:flex;
+  /* --- Header layout --- */
+  .header-inner{
+    flex-direction: row;        /* ✅ keep row (brand left, burger right) */
+    align-items: center;
   }
 
+  .brand{
+    max-width: calc(100% - 56px); /* keep room for burger */
+  }
+
+  /* --- Hamburger button --- */
+  .nav-toggle{
+    display: inline-flex;       /* ✅ show only on mobile */
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.14);
+    background: rgba(255,255,255,0.06);
+    color: #fff;
+    cursor: pointer;
+  }
+
+  /* --- Dropdown menu --- */
   .nav{
-    position:absolute;
-    top:100%;
-    right:0;
-    background:#4b4f58; /* match header */
-    width:100%;
-    flex-direction:column;
-    align-items:flex-start;
-    padding:16px 20px;
-    display:none;
+    position: absolute;
+    top: calc(100% + 12px);     /* below header */
+    right: 0;
+    left: 0;
+    width: auto;
+
+    display: none;              /* ✅ hidden until active */
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+
+    padding: 14px 16px;
+    border-radius: 16px;
+    background: rgba(55, 60, 70, 0.96); /* match header */
+    border: 1px solid rgba(255,255,255,0.12);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
   }
 
   .nav a{
-    padding:10px 0;
-    width:100%;
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 12px;
   }
 
   .nav.active{
-    display:flex;
+    display: flex;              /* ✅ open state */
   }
 
+  /* --- Anchor offset: ONLY sticky header height (not dropdown) --- */
+  :root{
+    --header-height: 92px; /* stable height now */
+    --anchor-offset: calc(var(--header-height) + 12px);
+  }
+
+  /* --- your spacing tweaks (keep) --- */
+  .container{ padding: 0 16px; }
+
+  .hero-block{ padding: 22px 18px 175px; }
+  .hero-ribbon{ height: 125px; left: 14px; right: 14px; bottom: 14px; }
 }
+
 
 
