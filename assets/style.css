@@ -297,14 +297,6 @@ h1{
   opacity: 0.95;
 }
 
-@media (max-width: 768px){
-  .hero-ribbon{
-    background-size: 900px auto;
-    opacity: 0.65;
-  }
-}
-
-
 /* Base content styling */
 a{ color: rgba(15,23,42,0.92); }
 a:hover{ color: rgba(15,23,42,0.98); }
