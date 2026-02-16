@@ -489,7 +489,7 @@ li{
   /* --- your spacing tweaks (keep) --- */
   .container{ padding: 0 16px; }
 
-  .hero-block{ padding: 22px 18px 175px; }
+  .hero-block{ padding: 22px 18px 75px; }
   .hero-ribbon{ height: 125px; left: 14px; right: 14px; bottom: 14px; }
 }
 
