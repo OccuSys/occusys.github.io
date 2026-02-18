@@ -145,7 +145,7 @@ body{
 /* Base content styling */
 .main a {
   color: #1e40af;   /* academic blue */
-  text-decoration: none;
+  text-decoration: underline;
   font-weight: 500;
 }
 
