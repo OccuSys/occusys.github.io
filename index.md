@@ -20,7 +20,7 @@ permalink: /
         <span class="pill"><strong>Submission</strong> April 10, 2026 (AoE)</span>
         <span class="pill"><strong>Notification</strong> April 20, 2026</span>
         <span class="pill"><strong>Camera-ready</strong> May 5, 2026</span>
-        <a class="btn primary small" href="https://occusys.hotcrp.com/" target="_blank" rel="noopener">Submit</a>
+        <a class="btn primary small" href="https://occusys26.hotcrp.com/" target="_blank" rel="noopener">Submit</a>
       </div>
     </div>
   </div>
