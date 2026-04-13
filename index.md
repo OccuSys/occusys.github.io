@@ -17,9 +17,9 @@ permalink: /
       </p>
 
       <div class="hero-meta">
-        <span class="pill"><strong>Submission</strong> April 10, 2026 (AoE)</span>
-        <span class="pill"><strong>Notification</strong> April 20, 2026</span>
-        <span class="pill"><strong>Camera-ready</strong> May 5, 2026</span>
+        <span class="pill"><strong>Submission</strong> April 17, 2026 (AoE)</span>
+        <span class="pill"><strong>Notification</strong> April 27, 2026</span>
+        <span class="pill"><strong>Camera-ready</strong> May 13, 2026</span>
         <a class="btn primary small" href="https://occusys26.hotcrp.com/" target="_blank" rel="noopener">Submit</a>
       </div>
     </div>
@@ -81,10 +81,10 @@ Registration is handled through
 
 ## Important Dates (AoE) {#dates}
 
-- **Submission:** April 10, 2026  
-- **Reviewer Deadline:** April 17, 2026  
-- **Notification:** April 20, 2026  
-- **Camera-ready:** May 5, 2026  
+- **Submission:** April 17, 2026  
+- **Reviewer Deadline:** April 24, 2026  
+- **Notification:** April 27, 2026  
+- **Camera-ready:** May 13, 2026  
 
 ---
 ## Program {#program}
@@ -97,8 +97,8 @@ The workshop agenda and speaker lineup will be posted here after notifications.
 - Prof. Zoltan Nagy (TU Eindhoven)  
 - Prof. Michael Kane (Northeastern University)    
 - Dr. Martin Mosteiro Romero (TU Delft)
+- Dr. Wei Luo (TU Eindhoven) 
 - Maharshi Pathak (Northeastern University)  
-- Dr. Wei Luo (TU Eindhoven)  
 - Ava Mohammadi (TU Eindhoven)
 - Mahnaz Vahdat (Northeastern University)  
     
