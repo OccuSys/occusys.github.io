@@ -88,7 +88,33 @@ Registration is handled through
 ---
 ## Program {#program}
 
-The workshop agenda and speaker lineup will be posted here after notifications.
+### Keynote Speaker
+
+<div style="display:flex; align-items:flex-start; gap:30px; flex-wrap:wrap; margin-top:20px; margin-bottom:20px;">
+
+<div>
+<img src="/assets/Dolaana_Khovalyg.jpg" alt="Dolaana Khovalyg" style="width:260px; height:260px; object-fit:cover; border-radius:50%; border:6px solid #1f2a8a; box-shadow:0 8px 20px rgba(0,0,0,0.15);">
+</div>
+
+<div style="flex:1; min-width:320px;">
+
+#### Prof. Dolaana Khovalyg  
+**EPFL – Laboratory of Integrated Comfort Engineering (ICE)**
+
+**Talk Title:**  
+*Closing the Loop on the Human Body: Sensing, Modeling, and Control for Occupant-Centric Buildings*
+
+**Abstract:**  
+Occupant-centric building research has advanced rapidly in areas such as occupancy detection, preference learning, reinforcement learning-based HVAC control, and personal comfort systems, yet these advances remain largely disconnected.
+
+The human body, one of the most informative signal sources in a building, is still treated as a black box inferred indirectly through surveys or ambient sensors.
+
+Closing this loop requires coordinated progress across three tightly coupled layers: scalable physiological sensing, personalized models that translate sparse biomarkers into actionable estimates of thermal state, and adaptive controllers that act on these estimates to balance energy, comfort, and well-being.
+
+This keynote presents an integrated view of how these layers can work together, drawing on research at the Laboratory of Integrated Comfort Engineering (ICE) at EPFL. It closes by surfacing the open questions that remain between the layers, questions the OccuSys community is uniquely positioned to address as it works toward genuinely human-in-the-loop buildings.
+
+</div>
+</div>
 
 ---
 ## Organizing Committee {#organization}
