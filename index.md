@@ -88,13 +88,11 @@ Registration is handled through
 ---
 ## Program {#program}
 
-## Program {#program}
-
 ### Keynote Speaker
 
 <div style="text-align:center; margin-top:30px;">
 
-<img src="/assets/dolaana_khovalyg.jpg" alt="Dolaana Khovalyg"
+<img src="/assets/dolaana_Khovalyg.jpg" alt="Dolaana Khovalyg"
 style="width:260px; height:260px; object-fit:cover; border-radius:50%; border:6px solid #1f2a8a; box-shadow:0 8px 20px rgba(0,0,0,0.15);">
 
 <h3 style="margin-top:18px; margin-bottom:8px;">Prof. Dolaana Khovalyg</h3>
