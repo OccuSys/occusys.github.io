@@ -88,30 +88,42 @@ Registration is handled through
 ---
 ## Program {#program}
 
+## Program {#program}
+
 ### Keynote Speaker
 
-<div style="display:flex; align-items:flex-start; gap:30px; flex-wrap:wrap; margin-top:20px; margin-bottom:20px;">
+<div style="text-align:center; margin-top:30px;">
 
-<div>
-<img src="/assets/Dolaana_Khovalyg.jpg" alt="Dolaana Khovalyg" style="width:260px; height:260px; object-fit:cover; border-radius:50%; border:6px solid #1f2a8a; box-shadow:0 8px 20px rgba(0,0,0,0.15);">
-</div>
+<img src="/assets/dolaana_khovalyg.jpg" alt="Dolaana Khovalyg"
+style="width:260px; height:260px; object-fit:cover; border-radius:50%; border:6px solid #1f2a8a; box-shadow:0 8px 20px rgba(0,0,0,0.15);">
 
-<div style="flex:1; min-width:320px;">
+<h3 style="margin-top:18px; margin-bottom:8px;">Prof. Dolaana Khovalyg</h3>
 
-#### Prof. Dolaana Khovalyg  
-**EPFL – Laboratory of Integrated Comfort Engineering (ICE)**
+<p style="margin-top:0; font-size:18px;"><strong>EPFL – Laboratory of Integrated Comfort Engineering (ICE)</strong></p>
 
-**Talk Title:**  
-*Closing the Loop on the Human Body: Sensing, Modeling, and Control for Occupant-Centric Buildings*
+<p style="font-size:24px; font-weight:700; max-width:900px; margin:25px auto 15px auto; line-height:1.35;">
+Closing the Loop on the Human Body: Sensing, Modeling, and Control for Occupant-Centric Buildings
+</p>
 
-**Abstract:**  
+<div style="max-width:900px; margin:0 auto; text-align:left; line-height:1.8; font-size:18px;">
+
+<p><strong>Abstract:</strong></p>
+
+<p>
 Occupant-centric building research has advanced rapidly in areas such as occupancy detection, preference learning, reinforcement learning-based HVAC control, and personal comfort systems, yet these advances remain largely disconnected.
+</p>
 
+<p>
 The human body, one of the most informative signal sources in a building, is still treated as a black box inferred indirectly through surveys or ambient sensors.
+</p>
 
+<p>
 Closing this loop requires coordinated progress across three tightly coupled layers: scalable physiological sensing, personalized models that translate sparse biomarkers into actionable estimates of thermal state, and adaptive controllers that act on these estimates to balance energy, comfort, and well-being.
+</p>
 
-This keynote presents an integrated view of how these layers can work together, drawing on research at the Laboratory of Integrated Comfort Engineering (ICE) at EPFL. It closes by surfacing the open questions that remain between the layers, questions the OccuSys community is uniquely positioned to address as it works toward genuinely human-in-the-loop buildings.
+<p>
+This keynote presents an integrated view of how these layers can work together, drawing on research at the Laboratory of Integrated Comfort Engineering (ICE) at EPFL.
+</p>
 
 </div>
 </div>
